@@ -4,3 +4,8 @@
 <% @cart.each do |item| %>
   <%= item %>
 <% end %>
+
+<form action="<%= products_add %>" method="POST">
+  <input type="text" name="name" id="name"/>
+  <input type="submit" value="submit" id="submit"/>
+</form>
