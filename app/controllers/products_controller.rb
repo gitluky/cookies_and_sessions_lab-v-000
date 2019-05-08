@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
 
   def add
     session[:cart] << params[:product]
+    binding.pry
     redirect_to products_index_path
   end
 
