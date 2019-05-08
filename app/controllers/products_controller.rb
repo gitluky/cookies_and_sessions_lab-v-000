@@ -2,11 +2,11 @@ class ProductsController < ApplicationController
 
   def index
     @cart = cart
+    binding.pry
   end
 
   def add
     session[:cart] << params[:product]
-    binding.pry
     redirect_to products_index_path
   end
 
